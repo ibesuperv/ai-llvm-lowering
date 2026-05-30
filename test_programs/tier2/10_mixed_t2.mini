@@ -1,0 +1,17 @@
+fn complex_math(a: float, b: float, iterations: int): float {
+    let result: float = a;
+    for (let i: int = 0; i < iterations; i = i + 1) {
+        if (i % 2 == 0) {
+            result = result * b;
+        } else {
+            result = result + b;
+        }
+    }
+    return result;
+}
+
+fn main(): int {
+    let ans: float = complex_math(1.5, 2.0, 5);
+    print(ans);
+    return 0;
+}

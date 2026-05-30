@@ -1,0 +1,36 @@
+# Environment — NEVER commit real API keys
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated pipeline output (bulk runs)
+# Note: demo/sample_outputs/*.ll ARE committed (they are examples, not bulk output)
+results/
+*.bc
+*.o
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,14 @@
+fn greet(name: string): void {
+    print("Hello, ");
+    print(name);
+    print("!\n");
+}
+
+fn main(): int {
+    let my_name: string = "World";
+    greet(my_name);
+    
+    // Testing escape sequences
+    print("Line 1\nLine 2\tTabbed\n");
+    return 0;
+}

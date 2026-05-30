@@ -1,0 +1,19 @@
+fn add(a: int, b: int): int {
+    return a + b;
+}
+
+fn multiply(a: int, b: int): int {
+    return a * b;
+}
+
+fn math_op(x: int, y: int, z: int): int {
+    let sum: int = add(x, y);
+    let result: int = multiply(sum, z);
+    return result;
+}
+
+fn main(): int {
+    let ans: int = math_op(2, 3, 4);
+    print(ans);
+    return 0;
+}

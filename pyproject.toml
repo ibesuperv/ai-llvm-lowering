@@ -1,0 +1,14 @@
+[project]
+name = "ai-llvm-lowering"
+version = "0.1.0"
+description = "AI-Assisted Lowering from High-Level Code to LLVM IR"
+dependencies = [
+    "click>=8.1.7",
+    "rich>=13.7.0",
+    "google-generativeai>=0.4.0",
+    "groq>=0.4.2"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

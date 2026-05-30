@@ -1,0 +1,12 @@
+fn hypotenuse(a: float, b: float): float {
+    let a2: float = a * a;
+    let b2: float = b * b;
+    let sum: float = a2 + b2;
+    return sum;
+}
+
+fn main(): int {
+    let result: float = hypotenuse(3.0, 4.0);
+    print(result);
+    return 0;
+}

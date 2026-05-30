@@ -1,0 +1,29 @@
+fn reverse_array(arr: int[], size: int): void {
+    let left: int = 0;
+    let right: int = size - 1;
+    
+    while (left < right) {
+        let temp: int = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
+        left = left + 1;
+        right = right - 1;
+    }
+}
+
+fn main(): int {
+    print("Original array:");
+    let nums: int[] = [5, 4, 3, 2, 1];
+    for (let i: int = 0; i < 5; i = i + 1) {
+        print(nums[i]);
+    }
+    
+    reverse_array(nums, 5);
+    
+    print("Reversed array:");
+    for (let j: int = 0; j < 5; j = j + 1) {
+        print(nums[j]);
+    }
+    
+    return 0;
+}

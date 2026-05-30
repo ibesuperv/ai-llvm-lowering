@@ -1,0 +1,14 @@
+fn find_first_divisible(start: int, end: int, divisor: int): int {
+    for (let i: int = start; i <= end; i = i + 1) {
+        if (i % divisor == 0) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+fn main(): int {
+    let result: int = find_first_divisible(10, 20, 7);
+    print(result);
+    return 0;
+}

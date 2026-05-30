@@ -1,0 +1,27 @@
+fn is_even(n: int): int {
+    let rem: int = n % 2;
+    if (rem == 0) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+fn count_evens(limit: int): int {
+    let count: int = 0;
+    let i: int = 0;
+    while (i < limit) {
+        let even: int = is_even(i);
+        if (even == 1) {
+            count = count + 1;
+        }
+        i = i + 1;
+    }
+    return count;
+}
+
+fn main(): int {
+    let evens: int = count_evens(10);
+    print(evens);
+    return 0;
+}
