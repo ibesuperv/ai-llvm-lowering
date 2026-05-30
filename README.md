@@ -331,10 +331,3 @@ See **[EVALUATION.md](EVALUATION.md)** for full breakdown including the fibonacc
 
 ---
 
-## Team
-
-| Member   | Contribution                                                |
-| -------- | ----------------------------------------------------------- |
-| Member 1 | MiniLang grammar, Lexer, Parser, Tier detection             |
-| Member 2 | LLM clients, Prompt Engine (3 strategies), Rate limiting    |
-| Member 3 | Validator, Repair Orchestrator, Evaluator, IR normalization |
